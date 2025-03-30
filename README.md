@@ -12,10 +12,6 @@ This is a python implementation of the **scRCL-G** framework that evaluates the 
 }
 ```
 
-<p align="center">
-  <img src="images/Flowchart.png" width="900" title="AF-RCL flow-chart">
-</p>
-
 # Usage
 This repository contains the implementation of the **scRCL-G** framework. The implementation is built in Python3 (version 3.10.12) using Scikit-learn and the deep learning library Pytorch. 
 
