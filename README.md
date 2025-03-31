@@ -44,7 +44,7 @@ Here we briefly describe each `.py` file in the **code** folder.
 
 `data.py` Reads and preprocesses the given dataset.
 
-`losses.py` Includes the self-supvised contrastive learning loss [(Chen et al., 2020)](http://proceedings.mlr.press/v119/chen20j.html) and the supervised contrastive learning loss [(Khosla et al., 2020)](https://proceedings.neurips.cc/paper/2020/hash/d89a66c7c80a29b1bdbab0f2a1a94af8-Abstract.html).
+`losses.py` Includes the self-supervised contrastive learning loss [(Chen et al., 2020)](http://proceedings.mlr.press/v119/chen20j.html) and the supervised contrastive learning loss [(Khosla et al., 2020)](https://proceedings.neurips.cc/paper/2020/hash/d89a66c7c80a29b1bdbab0f2a1a94af8-Abstract.html).
 
 `networks.py` Includes the encoder architecture.
 
