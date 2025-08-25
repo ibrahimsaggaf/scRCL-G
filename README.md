@@ -13,7 +13,7 @@ This is a python implementation of the **scRCL-G** framework that evaluates the 
 ```
 
 <p align="center">
-  <img src="images/Flowchart.png" width="700" title="AF-RCL flow-chart">
+  <img src="images/Flowchart.png" width="700" title="scRCL-G flow-chart">
 </p>
 
 
@@ -36,7 +36,7 @@ python3 main.py\
  --y [the full path to file y (i.e. cell types annotations)]\
  --name [the dataset name]\
  --eval [the evaluation approach. Please enter one of the following options: distributions or centroids]\
- --method [the method name. Please enter one of the following methods: Sup-GsRCL, Sup-RGMRCL-5000, Self-GsRCL, or Self-RGMRCL-3000]\
+ --method [the method name. Please enter one of the following methods: AF-RCL, Sup-GsRCL, Sup-RGMRCL-5000, Self-GsRCL, or Self-RGMRCL-3000]\
  --metric [the evaluation metric used for model selection. Please enter one of the following metrics: ari or nmi]\
  --train_size 0.8\
  --cv 5\
