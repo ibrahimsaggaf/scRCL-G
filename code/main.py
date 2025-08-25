@@ -12,8 +12,8 @@ from utils import load_pretrained_encoder
 
 
 def main(args):
-    if args.method not in ['Sup-GsRCL', 'Sup-RGMRCL-5000', 'Self-GsRCL', 'Self-RGMRCL-3000']:
-        raise NotImplementedError('Please use one of the following methods: Sup-GsRCL, Sup-RGMRCL-5000, Self-GsRCL, or Self-RGMRCL-3000')
+    if args.method not in ['AF-RCL', 'Sup-GsRCL', 'Sup-RGMRCL-5000', 'Self-GsRCL', 'Self-RGMRCL-3000']:
+        raise NotImplementedError('Please use one of the following methods: AF-RCL, Sup-GsRCL, Sup-RGMRCL-5000, Self-GsRCL, or Self-RGMRCL-3000')
 
     torch.manual_seed(args.seed)
     top_n_genes = 3000 if args.method == 'Self-RGMRCL-3000' else 5000 if args.method == 'Sup-RGMRCL-5000' else None
@@ -71,7 +71,7 @@ if __name__ == '__main__':
     parser.add_argument('--y', help='the full path to file y (i.e. cell types annotations)')
     parser.add_argument('--name', help='the dataset name')
     parser.add_argument('--eval', help='the evaluation approach. Please enter one of the following options: distributions or centroids')
-    parser.add_argument('--method', help='the method name. Please enter one of the following methods: Sup-GsRCL, Sup-RGMRCL-5000, Self-GsRCL, or Self-RGMRCL-3000')
+    parser.add_argument('--method', help='the method name. Please enter one of the following methods: AF-RCL, Sup-GsRCL, Sup-RGMRCL-5000, Self-GsRCL, or Self-RGMRCL-3000')
     parser.add_argument('--metric', help='the evaluation metric used for model selection. Please enter one of the following metrics: ari or nmi')
     parser.add_argument('--train_size', type=float, default=0.8, help='the training set size when splitting the data')
     parser.add_argument('--cv', type=int, default=5, help='the number of cross validation folds')
@@ -80,4 +80,5 @@ if __name__ == '__main__':
     parser.add_argument('--enc_path', help='the path where the pretrained encoder is saved')
 
     args = parser.parse_args()
+
     main(args)
